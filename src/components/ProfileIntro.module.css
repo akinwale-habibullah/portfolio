@@ -7,14 +7,11 @@
 }
 
 .passport {
-  width: 144px;
-  height: 144px;
   z-index: 2;
 }
 
 .passport-shadow {
   position: relative;
-  left: -108px;
   z-index: 1;
   background-color: #eee841;
 }

@@ -51,12 +51,34 @@ const ProfileIntro = () => {
         <Avatar
           alt='passport image of akinwale habib' 
           src={'/passport.jpeg'} 
-          sx={{ width: 144, height: 144 }}
+          sx={{ 
+            width: {
+              xs: 224,
+              md: 144
+            },
+            height: {
+              xs: 224,
+              md: 144
+            } 
+          }}
           className={ passport }
         />
         <Avatar
           alt='placeholder'
-          sx={{ width: 144, height: 144 }}
+          sx={{ 
+            width: {
+              xs: 224,
+              md: 144
+            }, 
+            height: {
+              xs: 224,
+              md: 144
+            },
+            left: {
+              xs: -112,
+              md: -108
+            }
+          }}
           className={ passportShadow }
         >
           {''}
