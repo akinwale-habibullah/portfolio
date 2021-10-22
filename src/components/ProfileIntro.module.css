@@ -1,0 +1,42 @@
+.role {
+  font-weight: 100;
+}
+
+.name {
+  font-weight: 900;
+}
+
+.passport {
+  width: 144px;
+  height: 144px;
+  z-index: 2;
+}
+
+.passport-shadow {
+  position: relative;
+  left: -108px;
+  z-index: 1;
+  background-color: #eee841;
+}
+
+.avatar-container {
+  display: flex;
+}
+
+.location {
+  height: 2rem;
+  width: 100%;
+  display: flex;
+}
+
+.location-div {
+  background-color: #000;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.city {
+  font-weight: 900;
+  color: #fff;
+}
