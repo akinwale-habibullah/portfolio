@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[524],{8080:function(l,o,e){e.r(o);var n=e(7294),u=e(3431);o.default=function(){return(0,u.jsx)(n.Fragment,null,(0,u.jsx)("p",null,"Hello World - Blog page"))}}}]);
+//# sourceMappingURL=component---src-pages-blog-index-js-45da6318720813055a26.js.map
