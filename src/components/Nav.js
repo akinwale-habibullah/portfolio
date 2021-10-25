@@ -42,7 +42,7 @@ const Nav = () => {
     >
       <Link to='/' className={link}>
         <Avatar
-          className={avatarComponent}
+          className={ avatarComponent }
         >
           AH
         </Avatar>
@@ -50,7 +50,7 @@ const Nav = () => {
       {
         matches
         ? <Avatar
-            className={avatarComponent}
+            className={ avatarComponent }
           >
             <MailOutline />
           </Avatar>
@@ -58,7 +58,12 @@ const Nav = () => {
             variant='contained'
             color='primary'
           >
-            Contact me
+            <a 
+              href='mailto:akinwalehabib@hotmail.com'
+              className={ link }
+            >
+              Contact me
+            </a>
           </Button>
       }
     </Box>
