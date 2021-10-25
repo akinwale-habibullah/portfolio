@@ -2,7 +2,7 @@ name: Publish Personal Site
 
 on:
   push:
-    branches: [ dev ]
+    branches: [ develop ]
 
 jobs:
   deploy:
@@ -12,4 +12,4 @@ jobs:
       - uses: enriikke/gatsby-gh-pages-action@v2.1.1
         with:
           access-token: ${{ secrets.DEPLOY_PERSONAL_SITE }}
-          deploy-branch: master
+          deploy-branch: gh-pages
