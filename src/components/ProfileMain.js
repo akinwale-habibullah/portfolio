@@ -152,7 +152,7 @@ const ProfileMain = () => {
           ABOUT ME
         </Typography>
         <Typography
-            variant='subtitle2'
+            variant='body1'
           >
             I am a Software and Data engineer with over 5 years of experience developing robust software applications in Education
             and Health industries. I currently develop eHealth products at Savics using MEAN/MERN stack and JavaFX. 
