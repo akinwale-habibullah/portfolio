@@ -2,9 +2,14 @@ import React from 'react'
 import {
   Box,
   Typography,
-  Avatar
+  Avatar,
+  AvatarGroup
 } from '@mui/material'
-import LocationOnIcon from '@mui/icons-material/LocationOn';
+import {
+  LocationOn,
+  GitHub,
+  LinkedIn
+} from '@mui/icons-material';
 import { 
   role,
   name,
@@ -13,7 +18,8 @@ import {
   passportShadow,
   location,
   locationDiv,
-  city
+  city,
+  link
 } from './ProfileIntro.module.css'
 
 const ProfileIntro = () => {
@@ -85,7 +91,10 @@ const ProfileIntro = () => {
             left: {
               xs: -112,
               md: -108
-            }
+            },
+            position: 'relative',
+            zIndex: 1,
+            backgroundColor: '#eee841'
           }}
           className={ passportShadow }
         >
@@ -105,7 +114,7 @@ const ProfileIntro = () => {
             color: '#eee841' 
           }}
         >
-          <LocationOnIcon />
+          <LocationOn />
         </Box>
         <Box
           className={locationDiv}
@@ -119,9 +128,46 @@ const ProfileIntro = () => {
           </Typography>
         </Box>
       </Box>
-      <Typography variant='caption'>
+      <Typography 
+        variant='caption'
+        gutterBottom={true}
+      >
         AVAILABLE FOR RELOCATION
       </Typography>
+      <AvatarGroup
+        sx={{
+          flexDirection: 'row'
+        }}
+      >
+          <Avatar
+            sx={{
+              backgroundColor: '#eee841'
+            }}
+          >
+            <a 
+              href='https://github.com/akinwale-habibullah'
+              target='_blank'
+              rel='noreferrer'
+              className={link}
+            >
+              <GitHub />
+            </a>
+          </Avatar>
+          <Avatar
+            sx={{
+              backgroundColor: '#eee841'
+            }}
+          >
+            <a 
+              href='https://linkedin.com/in/akinwalehabib'
+              target='_blank'
+              rel='noreferrer'
+              className={link}
+            >
+              <LinkedIn />
+            </a>
+          </Avatar>
+      </AvatarGroup>
     </Box>
   )
 }

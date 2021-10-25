@@ -12,7 +12,6 @@ import {
 } from '@mui/icons-material'
 import {
   navContainer,
-  avatarComponent,
   link
 } from './Nav.module.css'
 
@@ -42,7 +41,13 @@ const Nav = () => {
     >
       <Link to='/' className={link}>
         <Avatar
-          className={ avatarComponent }
+          sx={{
+            width: 56,
+            height: 56,
+            backgroundColor: 'rgba(0,0,0,0)',
+            border: 'solid thin #000',
+            color: '#000'
+          }}
         >
           AH
         </Avatar>
@@ -50,7 +55,11 @@ const Nav = () => {
       {
         matches
         ? <Avatar
-            className={ avatarComponent }
+            sx={{
+              width: 56,
+              height: 56,
+              backgroundColor: '#eee841'
+            }}
           >
             <MailOutline />
           </Avatar>

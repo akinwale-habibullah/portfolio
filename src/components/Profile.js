@@ -4,13 +4,12 @@ import {
 } from '@mui/material'
 import ProfileIntro from './ProfileIntro'
 import ProfileMain from './ProfileMain'
-import { profileContainer } from './Profile.module.css'
 
 const Profile = () => {
   return (
     <Container
-      className={profileContainer}
       sx={{
+        display: 'flex',
         pt: {
           xs: 8
         },

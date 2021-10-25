@@ -13,7 +13,8 @@ import {
   currentRoleHighlight,
   currentRoleCaption,
   currentRoleLink,
-  header
+  header,
+  dot
 } from './ProfileMain.module.css'
 import CodeIcon from '@mui/icons-material/Code';
 
@@ -68,6 +69,7 @@ const ProfileMain = () => {
             variant='caption'
             className={ currentRoleCaption }
           >
+            <span className={dot}></span>
             AVAILABLE FOR HIRE
           </Typography>
         </Box>
