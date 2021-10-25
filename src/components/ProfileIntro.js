@@ -21,18 +21,26 @@ const ProfileIntro = () => {
     <Box 
       component='aside'
       sx={{ 
-        flex: 2,
+        flex: 1.5,
         pl: {
           xs: 0,
-          md: 5
+          md: 5,
+          lg: 5
         },
-        borderRight: 'solid thin #cfd1d7'
+        mb: {
+          xs: 4,
+          md: 0
+        },
+        borderRight: {
+          xs: 'none',
+          md: 'solid thin #cfd1d7'
+        }
       }}
     >
       <Typography 
         variant='h6'
         className={ role }
-        sx={{ mb: 2 }}
+        gutterBottom={true}
       >
         Software Engineer
       </Typography>
@@ -87,6 +95,7 @@ const ProfileIntro = () => {
       <Box
         component='div'
         className={ location }
+        sx={{ mb: 0.5 }}
       >
         <Box 
           className={locationDiv}
@@ -100,7 +109,7 @@ const ProfileIntro = () => {
         </Box>
         <Box
           className={locationDiv}
-          sx={{ p: 1, pl: 2, pr: 2 }}
+          sx={{ p: 1 }}
         >
           <Typography 
             variant='body1'

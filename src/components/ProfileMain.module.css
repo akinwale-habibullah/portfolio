@@ -1,0 +1,21 @@
+.current-role {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  font-weight:600;
+}
+
+.current-role-highlight {
+  font-weight: 100;
+}
+
+.current-role-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.current-role-caption {
+  font-size: 0.7rem;
+}

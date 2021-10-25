@@ -10,14 +10,18 @@ import {
 import {
   MailOutline
 } from '@mui/icons-material'
-import { navContainer, link } from './Nav.module.css'
+import {
+  navContainer,
+  avatarComponent,
+  link
+} from './Nav.module.css'
 
 const Nav = () => {
   const theme = useTheme()
   const matches = useMediaQuery(theme.breakpoints.down('sm'))
   return (
     <Box
-      className={navContainer} 
+      className={navContainer}
       sx={{
         pt: {
           xs: 2,
@@ -38,7 +42,7 @@ const Nav = () => {
     >
       <Link to='/' className={link}>
         <Avatar
-          sx={{ width: 56, height: 56 }}
+          className={avatarComponent}
         >
           AH
         </Avatar>
@@ -46,7 +50,7 @@ const Nav = () => {
       {
         matches
         ? <Avatar
-          sx={{ width: 56, height: 56 }}
+            className={avatarComponent}
           >
             <MailOutline />
           </Avatar>
